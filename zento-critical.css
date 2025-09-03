@@ -1,4 +1,4 @@
-/* Critical CSS untuk Zento (versi minimal) */
+/* === Zento Critical CSS (Above the Fold Only) === */
 
 /* Reset & base */
 * {
@@ -18,15 +18,15 @@ body {
   padding: 0;
 }
 
-/* Layout dasar */
+/* Layout */
+header, main {
+  display: block;
+}
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
-}
-header, main, footer {
-  display: block;
 }
 
 /* Header */
@@ -34,6 +34,9 @@ header {
   background: #fff;
   border-bottom: 1px solid #eee;
   padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 header .logo {
   font-size: 1.25rem;
@@ -42,7 +45,7 @@ header .logo {
   text-decoration: none;
 }
 
-/* Navigasi */
+/* Navigation */
 nav ul {
   list-style: none;
   display: flex;
@@ -54,23 +57,28 @@ nav a {
   font-weight: 500;
 }
 
-/* Konten artikel */
+/* Artikel Above the Fold */
 article {
   padding: 1rem 0;
 }
-article h1, article h2 {
+article h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
   margin-bottom: 0.5rem;
-  font-weight: 600;
+  color: #111;
 }
 article p {
   margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #333;
 }
 
-/* Gambar */
+/* Gambar (featured image / thumbnail) */
 img {
   max-width: 100%;
   height: auto;
   display: block;
+  margin: 1rem 0;
 }
 
 /* Link */
