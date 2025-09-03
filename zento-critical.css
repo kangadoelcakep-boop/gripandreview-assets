@@ -1,0 +1,82 @@
+/* Critical CSS untuk Zento (versi minimal) */
+
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout dasar */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+header, main, footer {
+  display: block;
+}
+
+/* Header */
+header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 0.5rem 1rem;
+}
+header .logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+}
+
+/* Navigasi */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Konten artikel */
+article {
+  padding: 1rem 0;
+}
+article h1, article h2 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+article p {
+  margin-bottom: 1rem;
+}
+
+/* Gambar */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Link */
+a {
+  color: #0066cc;
+}
+a:hover {
+  text-decoration: underline;
+}
